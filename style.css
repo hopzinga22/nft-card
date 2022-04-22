@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216deg, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(216deg, 50%, 16%);
+  color: hsl(0deg, 0%, 100%);
+  margin: auto;
+  max-width: 25%;
+  max-height: 80%;
+  border-radius: 20px;
+}
+
+.hero-section {
+  position: relative;
+}
+.hero-section .img .view-img {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 2%;
+  right: 8%;
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
+  opacity: 1;
+}
+.hero-section .img .view-img:hover {
+  opacity: 1;
+  background-color: rgba(62, 247, 247, 0.5);
+}
+.hero-section .img .view-img:hover img {
+  opacity: 1;
+}
+.hero-section .img .view-img img {
+  position: absolute;
+  display: flex;
+  top: 35%;
+  right: 30%;
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+}
+.hero-section img {
+  padding: 30px;
+  border-radius: 40px;
+  width: 100%;
+}
+.hero-section h1 {
+  padding-left: 1em;
+  font-size: 1.5rem;
+}
+.hero-section p {
+  color: hsl(215deg, 51%, 70%);
+  padding-left: 1.5em;
+  opacity: 0.8;
+  line-height: 1.5rem;
+}
+
+.time-amount {
+  display: flex;
+}
+.time-amount .eth {
+  display: flex;
+  align-items: center;
+}
+.time-amount .eth img {
+  width: 4.5rem;
+}
+.time-amount .eth h4 {
+  margin-left: -20px;
+  color: hsl(178deg, 100%, 50%);
+}
+.time-amount .duration {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+.time-amount .duration img {
+  width: 5rem;
+}
+.time-amount .duration h4 {
+  margin-left: -20px;
+  opacity: 0.6;
+}
+
+hr {
+  margin: auto;
+  width: 90%;
+  opacity: 0.2;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  margin: -10px 10px 0px 0px;
+}
+.creator img {
+  width: 6rem;
+}
+.creator h5 {
+  margin-left: -1.2rem;
+  font-weight: 300;
+}
+.creator h5 span {
+  opacity: 0.6;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  background: #000;
+}
+
+.attribution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -80px 0px;
+  width: 40%;
+  background: hsl(216deg, 50%, 16%);
+  color: hsl(0deg, 0%, 100%);
+  word-spacing: 5px;
+  height: 80px;
+}
+.attribution a {
+  color: hsl(178deg, 100%, 50%);
+}
+.attribution a:hover {
+  color: hsl(215deg, 51%, 70%);
+}
+
+@media screen and (max-width: 70em) {
+  .card {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(216deg, 50%, 16%);
+    color: hsl(0deg, 0%, 100%);
+    margin: auto;
+    max-width: 65%;
+    max-height: 100%;
+    border-radius: 20px;
+  }
+
+  .img .view-img {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
+    opacity: 1;
+  }
+  .img .view-img:hover {
+    opacity: 1;
+    background-color: rgba(62, 247, 247, 0.5);
+  }
+  .img .view-img:hover img {
+    opacity: 1;
+  }
+  .img .view-img img {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 33%;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
+
+  .time-amount {
+    display: flex;
+    padding-right: 10px;
+  }
+  .time-amount .eth {
+    display: flex;
+    align-items: center;
+  }
+  .time-amount .eth img {
+    width: 4.5rem;
+  }
+  .time-amount .eth h4 {
+    margin-left: -20px;
+    opacity: 0.6;
+    color: hsl(178deg, 100%, 50%);
+  }
+  .time-amount .duration {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .time-amount .duration img {
+    width: 5rem;
+  }
+  .time-amount .duration h4 {
+    margin-left: -20px;
+    opacity: 0.6;
+  }
+
+  .attribution {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px;
+    min-width: 100%;
+    background: hsl(216deg, 50%, 16%);
+    color: hsl(0deg, 0%, 100%);
+    word-spacing: 5px;
+    height: 60px;
+    font-size: 0.8rem;
+  }
+  .attribution a {
+    color: hsl(178deg, 100%, 50%);
+  }
+  .attribution a:hover {
+    color: hsl(215deg, 51%, 70%);
+  }
+}/*# sourceMappingURL=style.css.map */
