@@ -84,9 +84,10 @@ body {
 .time-amount .eth img {
   width: 4.5rem;
 }
-.time-amount .eth h4 {
+.time-amount .eth p {
   margin-left: -20px;
   color: hsl(178deg, 100%, 50%);
+  font-size: 2rem; 
 }
 .time-amount .duration {
   display: flex;
@@ -99,6 +100,7 @@ body {
 .time-amount .duration h4 {
   margin-left: -20px;
   opacity: 0.6;
+  font-size: 2rem; 
 }
 
 hr {
